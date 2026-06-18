@@ -25,13 +25,25 @@ Analyze Apache access and error logs to identify suspicious activity, understand
 
 Counted the total number of HTTP requests observed in the access log.
 
-**Findings:** 69 requests and 11 requests were recorded in access and error logs respectively.
+Command:
+
+```bash
+wc -l access.log.1
+
+**Findings:**
+- 69 HTTP requests were recorded in the access log.
+- 11 events were recorded in the Apache error log.
+
 
 ![Request Count](screenshots/no_of_reqs.png)
 
 ---
 
 ### 2. HTTP Method Analysis
+
+```bash
+awk '{print $6}' access.log.1 | tr -d '"' | sort | uniq -c
+```
 
 Observed HTTP methods:
 
@@ -48,6 +60,10 @@ GET and POST requests were associated with normal web application usage, while O
 ---
 
 ### 3. HTTP Status Code Analysis
+
+```bash
+awk '{print $9}' access.log.1 | sort | uniq -c
+```
 
 Observed response codes:
 
