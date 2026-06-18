@@ -29,6 +29,7 @@ Command:
 
 ```bash
 wc -l access.log.1
+wc -l error.log
 ```
 
 **Findings:**
