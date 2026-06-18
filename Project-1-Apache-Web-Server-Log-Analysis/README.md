@@ -25,7 +25,7 @@ Analyze Apache access and error logs to identify suspicious activity, understand
 
 Counted the total number of HTTP requests observed in the access log.
 
-**Finding:** 69 requests were recorded.
+**Findings:** 69 requests and 11 requests were recorded in access and error logs respectively.
 
 ![Request Count](screenshots/no_of_reqs.png)
 
