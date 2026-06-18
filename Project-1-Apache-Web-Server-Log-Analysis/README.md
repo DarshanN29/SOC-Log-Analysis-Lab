@@ -41,7 +41,7 @@ Observed HTTP methods:
 - PROPFIND
 - ZTWJ
 
-![HTTP Method Analysis](screenshots/HTTP_method_analysis.png)
+![HTTP Method Analysis](screenshots/HTTP_methods_analysis.png)
 
 GET and POST requests were associated with normal web application usage, while OPTIONS and PROPFIND requests were indicative of reconnaissance activity.
 
