@@ -1,21 +1,35 @@
-# SOC-Log-Analysis-Lab
-A hands-on collection of log analysis projects involving Windows Event Logs, Syslog, Apache Logs, Network Traffic Logs, and ELK Stack investigations for threat detection, incident response, and security monitoring.
+# SOC Log Analysis Lab
 
-## Objectives
+A collection of hands-on cybersecurity log analysis projects focused on threat detection, incident investigation, and security monitoring using real-world and lab-generated logs.
 
-- Develop practical log analysis skills
-- Perform threat detection and incident investigation
-- Learn SIEM workflows and event correlation
-- Analyze logs from diverse security-relevant sources
+## Projects
 
-## Planned Areas
+| Project | Description |
+|----------|------------|
+| Apache Web Server Log Analysis | Investigation of Apache access and error logs to identify reconnaissance activity and understand web server behavior. |
 
-- Windows Event Logs
-- Syslog Analysis
-- Apache Log Analysis
-- Network Traffic Log Analysis
-- ELK Stack Projects
+## Skills Practiced
 
-## Status
+- Log Analysis
+- Threat Detection
+- Incident Investigation
+- Linux Log Analysis
+- Web Server Security Monitoring
+- Security Documentation
 
-🚧 Repository under development. Projects and case studies will be added progressively.
+## Tools Used
+
+- Linux
+- grep
+- awk
+- sort
+- uniq
+- wc
+
+## Repository Structure
+
+SOC-Log-Analysis-Lab/
+├── 01-Apache-Web-Server-Log-Analysis/
+└── README.md
+
+More projects will be added as the repository grows.
