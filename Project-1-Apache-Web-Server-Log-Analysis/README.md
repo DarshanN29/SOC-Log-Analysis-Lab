@@ -87,6 +87,10 @@ The presence of multiple 404 responses suggests attempts to access resources tha
 
 ### 4. Suspicious Requests
 
+```bash
+grep -E "robots.txt|\.git|HNAP1|PROPFIND" access.log.1
+```
+
 The following requests were identified during analysis:
 
 ```http
@@ -102,6 +106,10 @@ These requests are commonly associated with reconnaissance and service enumerati
 ---
 
 ### 5. Automated Scanning Activity
+
+```bash
+awk -F'"' '{print $6}' access.log.1 | sort | uniq -c
+```
 
 The following User-Agent was identified:
 
