@@ -6,7 +6,7 @@ Analyze Apache access and error logs to identify suspicious activity, understand
 
 ## Dataset
 
-- access.log
+- access.log.1
 - error.log
 
 > **Note:** All requests originated from `127.0.0.1` because the analysis was performed in a local DVWA lab environment. Therefore, source IP attribution was not part of this investigation.
