@@ -26,10 +26,4 @@ A collection of hands-on cybersecurity log analysis projects focused on threat d
 - uniq
 - wc
 
-## Repository Structure
-
-SOC-Log-Analysis-Lab/
-├── 01-Apache-Web-Server-Log-Analysis/
-└── README.md
-
 More projects will be added as the repository grows.
