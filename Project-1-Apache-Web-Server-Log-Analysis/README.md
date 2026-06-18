@@ -29,6 +29,7 @@ Command:
 
 ```bash
 wc -l access.log.1
+```
 
 **Findings:**
 - 69 HTTP requests were recorded in the access log.
