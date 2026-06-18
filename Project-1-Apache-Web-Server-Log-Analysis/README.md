@@ -27,6 +27,8 @@ Counted the total number of HTTP requests observed in the access log.
 
 **Finding:** 69 requests were recorded.
 
+![Request Count](screenshots/no_of_reqs.png)
+
 ---
 
 ### 2. HTTP Method Analysis
@@ -38,6 +40,8 @@ Observed HTTP methods:
 - OPTIONS
 - PROPFIND
 - ZTWJ
+
+![HTTP Method Analysis](screenshots/HTTP_methods_analysis.png)
 
 GET and POST requests were associated with normal web application usage, while OPTIONS and PROPFIND requests were indicative of reconnaissance activity.
 
@@ -56,6 +60,8 @@ Observed response codes:
 | 404 | Resource not found |
 | 405 | Method not allowed |
 | 501 | Method not implemented |
+
+![HTTP Status Code Analysis](screenshots/HTTP_statuscode_analysis.png)
 
 The presence of multiple 404 responses suggests attempts to access resources that were not available on the server.
 
