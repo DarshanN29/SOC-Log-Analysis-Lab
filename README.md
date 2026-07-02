@@ -4,7 +4,7 @@ A collection of hands-on cybersecurity log analysis projects focused on threat d
 
 ## Projects
 
-| S.no | Project | Description |
+| Sl.no | Project | Description |
 |---|---------|-------------|
 | 1 | Apache Web Server Log Analysis | Manual investigation of Apache access and error logs to identify reconnaissance activity, HTTP methods, response codes, and suspicious web requests. |
 | 2 | Linux System Log Analysis | Manual analysis of Linux system logs exported using `journalctl` to examine system services, authentication events, kernel messages, scheduled tasks, and administrative activity. |
