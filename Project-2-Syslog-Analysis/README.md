@@ -116,7 +116,8 @@ grep "Invalid user" system.log
 
 Investigate SSH authentication attempts and identify successful or failed logins.
 
-![SSH Analysis](screenshots/ssh-analysis.png)
+![SSH Analysis](screenshots/ssh_analysis.png)
+![SSH Analysis](screenshots/ssh_analysis2.png)
 
 ### Interpretation
 
