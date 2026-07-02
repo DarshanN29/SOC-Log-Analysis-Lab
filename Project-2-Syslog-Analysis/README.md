@@ -77,7 +77,7 @@ Inspect the beginning and end of the log file to understand its format, timestam
 ### Command
 
 ```bash
-awk '{print $5}' system.log | cut -d'[' -f1 | sort | uniq -c | sort -nr | head
+awk '{print $5}' system.log | cut -d'[' -f1 | sort | uniq -c | sort -nr | head -20
 ```
 
 ### Purpose
@@ -174,10 +174,6 @@ Review periodic system jobs and scheduled maintenance activities.
 
 ```bash
 grep -i error system.log
-```
-
-```bash
-grep -i fail system.log
 ```
 
 ### Purpose
