@@ -37,7 +37,10 @@ journalctl > system.log
 ### Command
 
 ```bash
+head -20 system.log
+tail -20 system.log
 wc -l system.log
+awk '{print $5}' system.log | cut -d'[' -f1 | sort | uniq -c | sort -nr | head -20
 ```
 
 ### Purpose
@@ -46,10 +49,10 @@ Determine the total number of log entries available for analysis.
 
 ### Finding
 
-XXXX log entries were recorded.
+41211 log entries were recorded.
 
-![Dataset Overview](screenshots/dataset-overview.png)
-
+![Dataset Overview](screenshots/data_overview1.png)
+![Dataset Overview](screenshots/data_overview2.png)
 ---
 
 ## 2. Log Structure Inspection
