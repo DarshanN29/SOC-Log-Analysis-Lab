@@ -37,10 +37,7 @@ journalctl > system.log
 ### Command
 
 ```bash
-head -20 system.log
-tail -20 system.log
 wc -l system.log
-awk '{print $5}' system.log | cut -d'[' -f1 | sort | uniq -c | sort -nr | head -20
 ```
 
 ### Purpose
@@ -51,8 +48,8 @@ Determine the total number of log entries available for analysis.
 
 41211 log entries were recorded.
 
-![Dataset Overview](screenshots/data_overview1.png)
-![Dataset Overview](screenshots/data_overview2.png)
+![Dataset Overview](screenshots/Log_entries.png)
+
 ---
 
 ## 2. Log Structure Inspection
@@ -71,7 +68,7 @@ tail -20 system.log
 
 Inspect the beginning and end of the log file to understand its format, timestamps, and recorded events.
 
-![Log Structure](screenshots/log-structure.png)
+![Log Structure](screenshots/data_overview1.png)
 
 ---
 
@@ -139,7 +136,7 @@ grep sudo system.log
 
 Identify privileged commands executed using `sudo`.
 
-![Sudo Analysis](screenshots/sudo-analysis.png)
+![Sudo Analysis](screenshots/sudo_analysis.png)
 
 ### Interpretation
 
@@ -154,7 +151,7 @@ Review administrative actions performed on the system.
 ```bash
 grep CRON system.log
 ```
-
+OR
 ```bash
 grep cron system.log
 ```
@@ -163,7 +160,7 @@ grep cron system.log
 
 Identify scheduled task execution.
 
-![CRON Analysis](screenshots/cron-analysis.png)
+![CRON Analysis](screenshots/cron_analysis.png)
 
 ### Interpretation
 
@@ -187,7 +184,7 @@ grep -i fail system.log
 
 Search for error messages and failed operations.
 
-![Error Analysis](screenshots/error-analysis.png)
+![Error Analysis](screenshots/error_analysis.png)
 
 ### Interpretation
 
@@ -207,7 +204,7 @@ grep kernel system.log | head -20
 
 Inspect kernel-generated log messages.
 
-![Kernel Analysis](screenshots/kernel-analysis.png)
+![Kernel Analysis](screenshots/kernel_analysis.png)
 
 ### Interpretation
 
